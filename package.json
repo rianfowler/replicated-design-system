@@ -73,5 +73,6 @@
     "cross-env": "^7.0.3",
     "prettier": "^2.7.1"
   },
+  "main": "dist/index.js",
   "license": "MIT"
 }

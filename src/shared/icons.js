@@ -1,4 +1,4 @@
-import adoptionRate from "./icons/adoption_rate.svg";
+import adoptionRate from "src/shared/icons/adoption_rate.svg";
 import backArrowBlue from "./icons/back_arrow_blue.svg";
 import backArrowHover from "./icons/back_arrow_hover.svg";
 import backArrow from "./icons/back_arrow.svg";

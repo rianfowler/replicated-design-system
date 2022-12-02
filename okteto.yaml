@@ -1,0 +1,12 @@
+build:
+  rian-replicated-design-system:
+     image: okteto.dev/rian-replicated-design-system:latest
+     context: ./
+     dockerfile: Dockerfile
+deploy:
+  - kubectl apply -f k8s --recursive
+dev:
+  rian-replicated-design-system:
+    command: npm run storybook
+    sync:
+      - /src:/src

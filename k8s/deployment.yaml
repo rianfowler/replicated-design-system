@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rian-replicated-design-system
+spec:
+  selector:
+    matchLabels:
+      app: rian-replicated-design-system
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: rian-replicated-design-system
+    spec:
+      containers:
+      - name: rian-replicated-design-system
+        image: okteto.dev/rian-replicated-design-system:latest
+        ports:
+        - containerPort: 8080
